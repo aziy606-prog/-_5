@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Модернизация школ</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f0f4f8;color:#032236;}
+header{background:#003b73;color:white;padding:20px;text-align:center;}
+header a{color:white;text-decoration:none;font-weight:600;margin:0 10px;}
+.container{max-width:1200px;margin:20px auto;padding:0 18px;}
+.section{background:white;padding:20px;border-radius:12px;margin-bottom:20px;box-shadow:0 4px 20px rgba(0,0,0,0.1);}
+h1,h2{color:#003b73;}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:10px;}
+.gallery-grid img{width:100%;border-radius:8px;height:160px;object-fit:cover;}
+
+.school-animation{position:relative;width:100%;height:200px;background:#cfe2ff;border-radius:12px;overflow:hidden;margin-top:10px;}
+.book{position:absolute;width:30px;height:20px;background:#ff4b5c;border-radius:4px;top:180px;animation:flyBook 4s linear infinite;}
+.book:nth-child(2){left:50px;animation-duration:5s;background:#ffd60a;}
+.book:nth-child(3){left:120px;animation-duration:6s;background:#00b4d8;}
+@keyframes flyBook{0%{transform:translateY(0) rotate(0deg);}50%{transform:translateY(-120px) rotate(180deg);}100%{transform:translateY(0) rotate(360deg);}}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Модернизация школ</h1>
+<p>Проект по обновлению школьной инфраструктуры и безопасности.</p>
+<nav>
+<a href="index.html">Главная</a>
+<a href="roads.html">Дороги</a>
+<a href="architecture.html">Архитектура</a>
+</nav>
+</header>
+
+<div class="container">
+
+<div class="section">
+<h2>Анимация школьных книг</h2>
+<div class="school-animation">
+    <div class="book"></div>
+    <div class="book"></div>
+    <div class="book"></div>
+</div>
+</div>
+
+<div class="section">
+<h2>Описание проекта</h2>
+<p>Модернизация школьной инфраструктуры: новые классы, комфортные условия и безопасность для учеников.</p>
+</div>
+
+<div class="section">
+<h2>Галерея проектов</h2>
+<div class="gallery-grid">
+<img src="img/школа 1.jpg" alt="Школа 1">
+<img src="img/школа 2.jpg" alt="Школа 2">
+<img src="img/школа 3.jpg" alt="Школа 3">
+</div>
+</div>
+
+</div>
+
+</body>
+</html> 
+ 

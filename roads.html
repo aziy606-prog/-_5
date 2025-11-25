@@ -1,0 +1,402 @@
+<!-- <!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Строительство дорог</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f0f4f8;color:#032236;}
+header{background:#003b73;color:white;padding:20px;text-align:center;}
+header a{color:white;text-decoration:none;font-weight:600;margin:0 10px;}
+.container{max-width:1200px;margin:20px auto;padding:0 18px;}
+.section{background:white;padding:20px;border-radius:12px;margin-bottom:20px;box-shadow:0 4px 20px rgba(0,0,0,0.1);}
+h1,h2{color:#003b73;}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:10px;}
+.gallery-grid img{width:100%;border-radius:8px;height:160px;object-fit:cover;}
+.road-animation{position:relative;width:100%;height:200px;background:#a0c4ff;border-radius:12px;overflow:hidden;margin-top:10px;}
+.car{position:absolute;width:50px;height:25px;background:#ff4b5c;border-radius:6px;top:130px;animation:moveCar 5s linear infinite;}
+.bridge{position:absolute;width:80px;height:20px;background:#8b4513;top:150px;left:200px;border-radius:4px;}
+@keyframes moveCar{0%{left:-60px}100%{left:100%}}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Строительство дорог</h1>
+<p>Подробная информация о проектах модернизации региональных дорог и мостов.</p>
+<nav>
+<a href="index.html">Главная</a>
+<a href="architecture.html">Архитектура</a>
+<a href="schools.html">Школы</a>
+</nav>
+</header>
+
+<div class="container">
+
+<div class="section">
+<h2>Анимация движения транспорта</h2>
+<div class="road-animation">
+    <div class="car"></div>
+    <div class="car" style="top:80px;animation-duration:6s;background:#00b4d8;"></div>
+    <div class="bridge"></div>
+</div>
+</div>
+
+<div class="section">
+<h2>Описание проекта</h2>
+<p>Строительство и модернизация автомобильных дорог, мостов, транспортных развязок. Используются современные материалы и технологии для безопасного и долговечного дорожного покрытия.</p>
+</div>
+
+<div class="section">
+<h2>Галерея проектов</h2>
+<div class="gallery-grid">
+<img src="img/строительство дорого 2.jpg" alt="Дорога 1">
+<img src="img/строительство дорого 3.jpg" alt="Мост">
+<img src="img/строительство дорого.jpg" alt="Транспортная развязка">
+</div>
+</div>
+
+</div>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Строительство дорог — Московский район, с. Беловодское</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#f4f7fb;
+  --card:#ffffff;
+  --accent:#003b73;
+  --accent-2:#0077b6;
+  --muted:#6b7280;
+  --glass: rgba(255,255,255,0.7);
+  --radius:14px;
+  --shadow: 0 6px 30px rgba(8,30,52,0.08);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter, system-ui, Arial, sans-serif;
+  background:linear-gradient(180deg,var(--bg),#eef4fb);
+  color:#052033;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+  padding-bottom:60px;
+}
+
+/* Header */
+.header{
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  color:white;
+  padding:28px 18px;
+  box-shadow:0 6px 24px rgba(0,33,66,0.12);
+}
+.header .wrap{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{flex:1}
+.brand h1{margin:0;font-size:20px;letter-spacing:0.2px}
+.brand p{margin:4px 0 0;font-size:13px;opacity:0.95}
+
+.nav{display:flex;gap:12px}
+.nav a{background:rgba(255,255,255,0.08);padding:8px 12px;border-radius:8px;color:white;text-decoration:none;font-weight:600;font-size:14px;transition:transform .18s ease}
+.nav a:hover{transform:translateY(-3px)}
+
+/* Container */
+.container{max-width:1200px;margin:22px auto;padding:0 18px;}
+
+/* Sections */
+.section{background:var(--card);border-radius:var(--radius);padding:20px;margin-bottom:18px;box-shadow:var(--shadow);overflow:hidden}
+.section h2{color:var(--accent);margin-top:0;margin-bottom:10px}
+.lead{color:var(--muted);margin-top:0}
+
+/* Grid */
+.grid{display:grid;grid-template-columns:1fr 380px;gap:18px}
+@media (max-width:980px){.grid{grid-template-columns:1fr}}
+
+/* Road animation */
+.road-animation{position:relative;width:100%;height:180px;background:linear-gradient(180deg,#bfe2ff,#79c0ff);border-radius:10px;overflow:hidden;margin-top:10px;box-shadow:inset 0 -30px 60px rgba(0,0,0,0.06)}
+.road{position:absolute;left:0;right:0;bottom:20px;height:56px;background:#2b3742;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+.lane{position:absolute;left:0;right:0;top:18px;height:6px;background:linear-gradient(90deg,#fff0,#fff2);opacity:0.4;box-shadow:0 2px 8px rgba(255,255,255,0.02)}
+.car{
+  position:absolute;
+  width:62px;height:34px;border-radius:8px;
+  top:92px;
+  background:linear-gradient(180deg,#ff6b6b,#e64a56);
+  box-shadow:0 8px 18px rgba(0,0,0,0.18);
+  transform:rotate(-2deg);
+  animation:drive 6.6s linear infinite;
+}
+.car.blue{background:linear-gradient(180deg,#00b4d8,#008bb0);top:56px;animation-duration:7.8s;transform:rotate(2deg)}
+.bridge{position:absolute;left:220px;bottom:66px;width:110px;height:18px;background:#8b5a2b;border-radius:6px;box-shadow:0 6px 14px rgba(0,0,0,0.12)}
+@keyframes drive{0%{left:-120px}100%{left:110%}}
+
+/* Gallery */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.gallery-grid img{width:100%;height:110px;object-fit:cover;border-radius:8px;display:block;box-shadow:0 6px 12px rgba(8,30,52,0.06)}
+
+/* Cards */
+.card{background:linear-gradient(180deg,white,#fbfdff);padding:14px;border-radius:12px;box-shadow:0 8px 30px rgba(10,30,60,0.04)}
+.stat-row{display:flex;gap:12px;flex-wrap:wrap}
+.stat{flex:1;min-width:140px;padding:12px;border-radius:10px;background:linear-gradient(180deg,#f7fbff,#ffffff);text-align:center}
+.stat h3{margin:0;font-size:22px;color:var(--accent)}
+.stat p{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+/* Map */
+.map-wrap iframe{width:100%;height:320px;border:0;border-radius:10px;box-shadow:0 8px 24px rgba(8,30,52,0.08)}
+
+/* Timeline */
+.timeline{display:flex;flex-direction:column;gap:12px}
+.timeline .item{display:flex;gap:12px;align-items:flex-start}
+.timeline .bullet{width:10px;height:10px;border-radius:50%;background:var(--accent);margin-top:6px;flex-shrink:0}
+.timeline .desc{background:linear-gradient(180deg,#ffffff,#fcfdff);padding:12px;border-radius:10px;flex:1;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+
+/* FAQ */
+.faq .q{font-weight:600;color:#0b314f}
+.faq p{margin:8px 0 0;color:var(--muted)}
+
+/* Footer */
+.footer{max-width:1200px;margin:0 auto;padding:18px;color:var(--muted);font-size:13px;text-align:center}
+
+/* Small helpers */
+.meta{font-size:13px;color:var(--muted)}
+.badge{display:inline-block;background:#eef8ff;color:var(--accent-2);padding:6px 10px;border-radius:999px;font-weight:700;margin-right:8px}
+
+/* Subtle appear animation */
+@keyframes appear{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.section{animation:appear .45s ease both}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="wrap">
+    <div class="brand">
+      <h1>Строительство дорог — Московский район (с. Беловодское)</h1>
+      <p>Подробный дашборд проектов, планов и материалов по развитию дорожной инфраструктуры</p>
+    </div>
+
+    <nav class="nav">
+      <a href="#projects">Проекты</a>
+      <a href="#materials">Материалы</a>
+      <a href="#map">Карта</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- Главная сетка: контент + сайдбар -->
+  <div class="grid">
+
+    <!-- Основной контент -->
+    <main>
+
+      <!-- Анимация движения -->
+      <section class="section" id="animation">
+        <h2>Анимация движения транспорта</h2>
+        <p class="lead">Схематичная анимация демонстрирует поток транспорта по центральной трассе, проходящей через Беловодское.</p>
+        <div class="road-animation">
+          <div class="road"></div>
+          <div class="lane"></div>
+          <div class="car" style="left:-80px"></div>
+          <div class="car blue" style="left:-240px"></div>
+          <div class="bridge" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- Подробное описание / расширенный текст (пункт 1) -->
+      <section class="section" id="about">
+        <h2>Подробная справка: строительство дорог в Московском районе</h2>
+
+        <p>
+          Село Беловодское является административным центром Московского района Чуйской области и расположено на
+          важной транспортной артерии — европейском маршруте E40 (ранее М-39). Дороги района связуют село с городом Бишкек,
+          райцентрами и приграничными трассами. В последние годы приоритетом администрации стало улучшение качества дорожного покрытия,
+          укрепление мостов и создание безопасных пешеходных зон возле школ и больниц.
+        </p>
+
+        <h3>Экономическое значение</h3>
+        <p>
+          Дорожная сеть напрямую влияет на сельское хозяйство (быстрая логистика для зерновой, овощной продукции),
+          местную торговлю и доступность услуг. Качественные дороги сокращают время перевозки, снижают износ транспорта и сокращают затраты фермеров.
+        </p>
+
+        <h3>Социальный эффект</h3>
+        <p>
+          Модернизация дорог улучшает доступ к медицинским и образовательным учреждениям, облегчает работу экстренных служб
+          и повышает качество жизни населения. В проект вмешаны программы по снижению аварийности, установка знаков и освещения
+          возле образовательных учреждений.
+        </p>
+
+        <h3>Безопасность и экология</h3>
+        <p>
+          При прокладке и ремонте дорог применяются дренажные решения и эко-подходы для минимизации выноса почвы и загрязнений.
+          Проект включает меры по контролю стоков, укреплению береговых линий и снижению пыления на грунтовых участках.
+        </p>
+
+        <h3>Ключевые показатели (приближённо)</h3>
+        <ul>
+          <li>Протяжённость главных дорог в районе: ~1200 км (включая междусельские и региональные трассы).</li>
+          <li>Дорожное покрытие с твёрдым покрытием: около 60–70% (центральные трассы и подъездные пути).</li>
+          <li>Количество мостовых переходов, требующих ремонта: ~20 (приоритет — слабые пролёты и устаревшие опоры).</li>
+        </ul>
+      </section>
+
+      <!-- Проекты (новые секции — пункт 2) -->
+      <section class="section" id="projects">
+        <h2 id="projects">Текущие и планируемые проекты</h2>
+
+        <div class="card" style="margin-bottom:12px">
+          <h3>Реконструкция центральной дороги (Беловодское — трасса E40)</h3>
+          <p class="meta">Статус: в процессе — этап укладки верхнего слоя</p>
+          <p>Работы включают: фрезерование старого покрытия, устройство нового основания, укладку асфальтобетонного покрытия, устройство обочин и ливнёвой канализации.</p>
+        </div>
+
+        <div class="card" style="margin-bottom:12px">
+          <h3>Укрепление мостов через р. Ак-Суу</h3>
+          <p class="meta">Статус: проектирование и укрепление опор</p>
+          <p>Замена пролётных строений, усиление свайных опор и устройство защитных стен для предупреждения размывов в период паводков.</p>
+        </div>
+
+        <div class="card">
+          <h3>Внутрисельские дороги и тротуары</h3>
+          <p class="meta">Статус: плановые работы на 2025–2026 гг.</p>
+          <p>Прокладка тротуаров, установка уличного освещения, создание безопасных переходов рядом со школами и детсадами.</p>
+        </div>
+
+      </section>
+
+      <!-- Материалы и технологии -->
+      <section class="section" id="materials">
+        <h2>Материалы и технологии</h2>
+        <div class="stat-row" style="margin-bottom:12px">
+          <div class="stat"><h3>Асфальт</h3><p>Показатели морозостойкости и водостойкости повышены за счёт модификаторов</p></div>
+          <div class="stat"><h3>Гравий/основание</h3><p>Укреплённое основание с геотекстилем для распределения нагрузки</p></div>
+          <div class="stat"><h3>Дренаж</h3><p>Лотки, коллекторы и дренажные трубы для отвода поверхностных вод</p></div>
+        </div>
+
+        <p>Также используются современные методы бурения свай, укрепления откосов и защиты мостовых опор. Для снижения шума вдоль трасс применяются шумозащитные барьеры в зонах жилой застройки.</p>
+      </section>
+
+      <!-- График / таймлайн -->
+      <section class="section" id="timeline">
+        <h2>График работ — план по годам</h2>
+        <div class="timeline">
+          <div class="item">
+            <div class="bullet"></div>
+            <div class="desc"><strong>2024</strong> — завершение обследований и проектных работ, подготовка земель, укрепление временных подъездных путей.</div>
+          </div>
+          <div class="item">
+            <div class="bullet"></div>
+            <div class="desc"><strong>2025</strong> — капитальный ремонт участков трассы E40, реконструкция двух мостов.</div>
+          </div>
+          <div class="item">
+            <div class="bullet"></div>
+            <div class="desc"><strong>2026</strong> — внутрирегиональные работы: тротуары, освещение, малые мосты и обустройство остановок.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <h2>FAQ — часто задаваемые вопросы</h2>
+        <div class="faq">
+          <p class="q">Как долго будут идти работы на центральной трассе?</p>
+          <p>Ожидаемая длительность капитального ремонта — 6–12 месяцев на основном участке, с учётом погодных условий.</p>
+
+          <p class="q">Повлияет ли ремонт на транспортировку сельхозпродукции?</p>
+          <p>В пиковые периоды будут вводиться временные объезды; плотность перевозок планируется оптимизировать для минимального воздействия.</p>
+
+          <p class="q">Будет ли учтено освещение и безопасность для пешеходов?</p>
+          <p>Да — проект включает устройство пешеходных зон, освещение и переходы возле школ и учреждений.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Сайдбар -->
+    <aside>
+
+      <!-- Статистика -->
+      <section class="section card">
+        <h2>Ключевые показатели</h2>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+          <div style="min-width:120px">
+            <div class="stat"><h3>23 000+</h3><p>население Беловодского (около)</p></div>
+          </div>
+          <div style="min-width:120px">
+            <div class="stat"><h3>~1200 км</h3><p>дороги в районе</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Галерея -->
+      <section class="section">
+        <h2>Галерея проектов</h2>
+        <div class="gallery-grid" aria-hidden="false">
+          <img src="img/строительство дорого 2.jpg" alt="Дорога 1">
+          <img src="img/строительство дорого 3.jpg" alt="Мост">
+          <img src="img/строительство дорого.jpg" alt="Развязка">
+          <img src="img/Улица Беловодское" alt="Улица Беловодское">
+        </div>
+      </section>
+
+      <!-- Карта (пункт 3) -->
+      <section class="section map-wrap" id="map">
+        <h2>Карта — с. Беловодское (Московский район)</h2>
+        <p class="lead">Координаты: <strong>42.821861, 74.102693</strong></p>
+        <!-- Виджет Яндекс.Карт по координатам (работает в офлайн-режиме браузера при наличии интернета) -->
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=74.102693%2C42.821861&z=12" allowfullscreen loading="lazy"></iframe>
+        <p style="margin-top:8px;font-size:13px;color:var(--muted)">Если хотите — могу заменить на Google Maps или OpenStreetMap-виджет.</p>
+      </section>
+
+      <!-- Заинтересованные стороны -->
+      <section class="section">
+        <h2>Заинтересованные стороны</h2>
+        <ul>
+          <li>Районная администрация Московского района</li>
+          <li>Министерство транспорта и дорожного хозяйства КР</li>
+          <li>Местные сельхозпроизводители</li>
+          <li>Школы и медицинские учреждения села Беловодское</li>
+        </ul>
+      </section>
+
+      <!-- Контакты -->
+      <section class="section" id="contacts">
+        <h2>Контакты</h2>
+        <p class="meta">Администрация Московского района — с. Беловодское</p>
+        <p style="margin:6px 0 0">Телефон: <strong>+996 (3131) 2-72-35</strong> (примерный)</p>
+        <p style="margin:4px 0 0">Email: <strong>info@moskovsky.kg</strong> (примерный)</p>
+      </section>
+
+    </aside>
+
+  </div> <!-- /grid -->
+
+</div> <!-- /container -->
+
+<footer class="footer">
+  Страница создана для демонстрации проекта по строительству дорог Московского района — с. Беловодское. © 2025
+</footer>
+
+</body>
+</html>
+

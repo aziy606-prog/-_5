@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Архитектурные проекты</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f0f4f8;color:#032236;}
+header{background:#003b73;color:white;padding:20px;text-align:center;}
+header a{color:white;text-decoration:none;font-weight:600;margin:0 10px;}
+.container{max-width:1200px;margin:20px auto;padding:0 18px;}
+.section{background:white;padding:20px;border-radius:12px;margin-bottom:20px;box-shadow:0 4px 20px rgba(0,0,0,0.1);}
+h1,h2{color:#003b73;}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:10px;}
+.gallery-grid img{width:100%;border-radius:8px;height:160px;object-fit:cover;}
+
+.arch-animation{position:relative;width:100%;height:250px;background:#cfe2ff;border-radius:12px;overflow:hidden;margin-top:10px;}
+.building{position:absolute;width:40px;height:60px;background:#ffb703;bottom:0;border-radius:4px;animation:riseBuildings 4s ease-in-out infinite alternate;}
+.building:nth-child(2){left:60px;height:90px;background:#fb8500;animation-duration:5s;}
+.building:nth-child(3){left:130px;height:70px;background:#219ebc;animation-duration:3.5s;}
+.building:nth-child(4){left:200px;height:100px;background:#023047;animation-duration:4.5s;}
+@keyframes riseBuildings{0%{transform:translateY(50px)}100%{transform:translateY(0)}}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Архитектурные проекты</h1>
+<p>Концептуальные и исполнительные проекты общественных и культурных зданий.</p>
+<nav>
+<a href="index.html">Главная</a>
+<a href="roads.html">Дороги</a>
+<a href="schools.html">Школы</a>
+</nav>
+</header>
+
+<div class="container">
+
+<div class="section">
+<h2>Анимация зданий</h2>
+<div class="arch-animation">
+    <div class="building"></div>
+    <div class="building"></div>
+    <div class="building"></div>
+    <div class="building"></div>
+</div>
+</div>
+
+<div class="section">
+<h2>Описание проекта</h2>
+<p>Разработка архитектурных концепций для современных зданий, общественных центров и культурных сооружений.</p>
+</div>
+
+<div class="section">
+<h2>Галерея проектов</h2>
+<div class="gallery-grid">
+<img src="img/Без названия (1).jpg" alt="Архитектура 1">
+<img src="img/Без названия (3).jpg" alt="Архитектура 2">
+<img src="img/Без названия (5).jpg" alt="Архитектура 3">
+</div>
+</div>
+
+</div>
+
+</body>
+</html> 
+ 

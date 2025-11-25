@@ -1,0 +1,338 @@
+<!-- <!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Министерство строительства и архитектуры КР</title>
+
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f0f4f8;color:#032236;}
+header{background:#003b73;color:white;padding:14px 22px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:50;}
+header a{color:white;text-decoration:none;font-weight:600;margin:0 10px;}
+header .logo{font-size:20px;font-weight:700;}
+footer{margin-top:40px;background:#032236;padding:20px;text-align:center;color:white;font-size:14px;border-top:3px solid #003b73;}
+.container{max-width:1200px;margin:auto;padding:20px;}
+.section{background:white;padding:20px;border-radius:12px;margin-bottom:20px;box-shadow:0 4px 20px rgba(0,0,0,0.1);}
+h1,h2{color:#003b73;}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:12px;}
+.card{background:white;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.08);padding:14px;text-align:center;}
+.card img{width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:10px;}
+.card h3{margin:10px 0;color:#003b73;}
+.card p{font-size:14px;color:#032236;margin-bottom:10px;}
+.card a{display:inline-block;padding:10px 14px;border-radius:8px;font-weight:700;text-decoration:none;margin:5px;}
+.call-btn{background:#003b73;color:white;}
+.details-btn{background:#0055a5;color:white;}
+
+.news-line{background:rgba(0,59,115,0.8);color:white;padding:10px;border-radius:8px;margin:14px 0;overflow:hidden;}
+.news-line .marquee{white-space:nowrap;display:inline-block;animation:marq 18s linear infinite;}
+@keyframes marq{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
+
+/* ANIMATION BANNER */
+.animated-banner{
+    position:relative;
+    height:340px;
+    border-radius:16px;
+    overflow:hidden;
+    margin-top:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.2);
+}
+.gradient-bg{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(120deg,#003b73,#0055a5,#0098ff);
+    background-size:300% 300%;
+    animation:gradientMove 10s infinite;
+}
+@keyframes gradientMove{
+    0%{background-position:0 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0 50%}
+}
+.line-art{
+    position:absolute;
+    width:100%;
+    top:110px;
+    opacity:0.7;
+}
+.icons{
+    position:absolute;
+    bottom:20px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+.icon{
+    width:60px;
+    opacity:0.95;
+}
+.move1{animation:float1 3s infinite ease-in-out;}
+.move2{animation:float2 3.5s infinite ease-in-out;}
+.move3{animation:float3 4s infinite ease-in-out;}
+
+@keyframes float1{0%{transform:translateY(0);}50%{transform:translateY(-12px);}100%{transform:translateY(0);}}
+@keyframes float2{0%{transform:translateY(0);}50%{transform:translateY(-18px);}100%{transform:translateY(0);}}
+@keyframes float3{0%{transform:translateY(0);}50%{transform:translateY(-10px);}100%{transform:translateY(0);}}
+
+.lottie{
+    position:absolute;
+    top:20px;
+    right:20px;
+    width:140px;
+    height:140px;
+    opacity:0.9;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">МСА КР</div>
+    <nav>
+        <a href="roads.html">Дороги</a>
+        <a href="architecture.html">Архитектура</a>
+        <a href="schools.html">Школы</a>
+    </nav>
+</header>
+
+<div class="container">
+
+<div class="news-line"><div class="marquee">🔔 Новости: новые проекты в Бишкеке, мост через Чу, модернизация школ, тендеры 2025 •</div></div>
+
+<div class="section">
+<h1>Добро пожаловать в Министерство строительства и архитектуры КР</h1>
+<p>Официальная информация о проектах, контактах и галерее объектов по всей стране.</p>
+</div>
+
+<div class="section">
+<h2>Наши проекты</h2>
+<div class="projects">
+<div class="card">
+<img src="img/Без названия.jpg" alt="roads">
+<h3>Строительство дорог</h3>
+<p>Модернизация дорог, мостов и транспортной инфраструктуры.</p>
+<a class="call-btn" href="tel:+996312312900">Позвонить</a>
+<a class="details-btn" href="roads.html">Подробнее</a>
+</div>
+
+<div class="card">
+<img src="img/Без названия (1).jpg" alt="architecture">
+<h3>Архитектурные проекты</h3>
+<p>Общественные и культурные здания, современные архитектурные концепции.</p>
+<a class="call-btn" href="tel:+996312312922">Связаться</a>
+<a class="details-btn" href="architecture.html">Подробнее</a>
+</div>
+
+<div class="card">
+<img src="img/Без названия (2).jpg" alt="school">
+<h3>Модернизация школ</h3>
+<p>Обновление школьной инфраструктуры, безопасность и комфорт учеников.</p>
+<a class="call-btn" href="tel:+996312312933">Связаться</a>
+<a class="details-btn" href="schools.html">Подробнее</a>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Анимационный баннер</h2>
+<div class="animated-banner">
+    <div class="gradient-bg"></div>
+    <svg class="line-art" viewBox="0 0 500 200">
+        <path d="M10 150 Q 150 50 300 150 T 490 150"
+              stroke="#ffffff" stroke-width="3" fill="none">
+            <animate attributeName="stroke-dashoffset"
+                     from="500" to="0" dur="3s" repeatCount="indefinite"/>
+            <animate attributeName="stroke-dasharray"
+                     from="0,500" to="500,0" dur="3s" repeatCount="indefinite"/>
+        </path>
+    </svg>
+    <div class="icons">
+        <img src="img/images.jpg" class="icon move1">
+        <img src="img/Без названия (6).jpg" class="icon move2">
+        <img src="img/Без названия (7).jpg" class="icon move3">
+    </div>
+    <lottie-player
+        src="https://assets7.lottiefiles.com/packages/lf20_mkcnk0.json"
+        background="transparent"
+        speed="1"
+        loop autoplay class="lottie">
+    </lottie-player>
+</div>
+</div>
+
+</div>
+
+<footer>
+© Министерство строительства и архитектуры КР, 2025
+</footer>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Министерство строительства и архитектуры КР</title>
+
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f0f4f8;color:#032236;}
+header{background:#003b73;color:white;padding:14px 22px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:50;}
+header a{color:white;text-decoration:none;font-weight:600;margin:0 10px;}
+header .logo{font-size:20px;font-weight:700;}
+footer{margin-top:40px;background:#032236;padding:20px;text-align:center;color:white;font-size:14px;border-top:3px solid #003b73;}
+.container{max-width:1200px;margin:auto;padding:20px;}
+.section{background:white;padding:20px;border-radius:12px;margin-bottom:20px;box-shadow:0 4px 20px rgba(0,0,0,0.1);}
+h1,h2{color:#003b73;}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:12px;}
+.card{background:white;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.08);padding:14px;text-align:center;}
+.card img{width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:10px;}
+.card h3{margin:10px 0;color:#003b73;}
+.card p{font-size:14px;color:#032236;margin-bottom:10px;}
+.card a{display:inline-block;padding:10px 14px;border-radius:8px;font-weight:700;text-decoration:none;margin:5px;}
+.call-btn{background:#003b73;color:white;}
+.details-btn{background:#0055a5;color:white;}
+
+.news-line{background:rgba(0,59,115,0.8);color:white;padding:10px;border-radius:8px;margin:14px 0;overflow:hidden;}
+.news-line .marquee{white-space:nowrap;display:inline-block;animation:marq 18s linear infinite;}
+@keyframes marq{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
+
+/* ANIMATION BANNER */
+.animated-banner{
+    position:relative;
+    height:340px;
+    border-radius:16px;
+    overflow:hidden;
+    margin-top:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.2);
+}
+.gradient-bg{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(120deg,#003b73,#0055a5,#0098ff);
+    background-size:300% 300%;
+    animation:gradientMove 10s infinite alternate;
+    z-index:1;
+}
+
+/* Плавающие фигуры */
+.shapes{
+    position:absolute;
+    inset:0;
+    z-index:2;
+    overflow:hidden;
+}
+.shape{
+    position:absolute;
+    width:40px;
+    height:40px;
+    background:rgba(255,255,255,0.5);
+    border-radius:50%;
+    animation:floatShape linear infinite;
+}
+.shape1{left:10%; animation-duration:6s; animation-delay:0s;}
+.shape2{left:40%; animation-duration:8s; animation-delay:1s;}
+.shape3{left:70%; animation-duration:5s; animation-delay:2s;}
+.shape4{left:85%; animation-duration:7s; animation-delay:0.5s;}
+
+@keyframes gradientMove{
+    0%{background-position:0 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0 50%;}
+}
+
+@keyframes floatShape{
+    0%{transform:translateY(100%) scale(1);}
+    50%{transform:translateY(40%) scale(1.3);}
+    100%{transform:translateY(-20%) scale(1);}
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">МСА КР</div>
+    <nav>
+        <a href="roads.html">Дороги</a>
+        <a href="architecture.html">Архитектура</a>
+        <a href="schools.html">Школы</a>
+    </nav>
+</header>
+
+<div class="container">
+
+<div class="news-line"><div class="marquee">🔔 Новости: новые проекты в Бишкеке, мост через Чу, модернизация школ, тендеры 2025 •</div></div>
+
+<div class="section">
+<h1>Добро пожаловать в Министерство строительства и архитектуры КР</h1>
+<p>Официальная информация о проектах, контактах и галерее объектов по всей стране.</p>
+</div>
+
+<div class="section">
+<h2>Наши проекты</h2>
+<div class="projects">
+<div class="card">
+<img src="img/Без названия.jpg" alt="roads">
+<h3>Строительство дорог</h3>
+<p>Модернизация дорог, мостов и транспортной инфраструктуры.</p>
+<a class="call-btn" href="tel:+996312312900">Позвонить</a>
+<a class="details-btn" href="roads.html">Подробнее</a>
+</div>
+
+<div class="card">
+<img src="img/Без названия (1).jpg" alt="architecture">
+<h3>Архитектурные проекты</h3>
+<p>Общественные и культурные здания, современные архитектурные концепции.</p>
+<a class="call-btn" href="tel:+996312312922">Связаться</a>
+<a class="details-btn" href="architecture.html">Подробнее</a>
+</div>
+
+<div class="card">
+<img src="img/Без названия (2).jpg" alt="school">
+<h3>Модернизация школ</h3>
+<p>Обновление школьной инфраструктуры, безопасность и комфорт учеников.</p>
+<a class="call-btn" href="tel:+996312312933">Связаться</a>
+<a class="details-btn" href="schools.html">Подробнее</a>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Анимационный баннер</h2>
+<div class="animated-banner">
+    <div class="gradient-bg"></div>
+    <div class="shapes">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+    </div>
+</div>
+</div>
+
+</div>
+
+<footer>
+© Министерство строительства и архитектуры КР, 2025
+</footer>
+
+</body>
+</html> 
+
